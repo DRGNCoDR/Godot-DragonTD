@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cax1y1rnydrdt"]
+
+[ext_resource type="Script" uid="uid://6nvvck0dnpxq" path="res://scripts/Helpers/statusbar_helper.gd" id="1_35yy6"]
+
+[node name="StatusBar" type="Node2D" unique_id=1528508967]
+script = ExtResource("1_35yy6")
+showBorder = true
+showColorByValue = true
+showText = true
+centerText = true
+
+[connection signal="draw" from="." to="." method="DrawBar"]
